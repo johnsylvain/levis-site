@@ -1,3 +1,120 @@
 html{
-	background-color: blue;
+
+
+	#nav{
+		position: fixed;
+		
+		ul{
+			margin: 80px 0px 0px 0px;
+			padding-left: 4px;
+		}
+
+		li{
+			list-style: none;
+			margin: 0px 0px 10px 0px;
+		}
+
+		#logo{
+			position: relative;
+			width: 200px;
+			margin: 140px auto 0px auto;
+		}
+		
+		a{
+			font-family: "Raleway", sans-serif;
+			text-decoration: none;
+			transition: 0.3s;
+			font-size: 16px;
+		}
+	
+		a:link{
+			color: #777777;
+		}
+
+		a:hover{
+			color: #aaaaaa;
+			text-decoration: none;
+		}
+
+		a:active{
+			color: #a44c4c;
+		}
+	}
+	
+
+	p{
+		margin: 24px 0px 0px 0px;
+		line-height: 20px;
+		font-family: "Open Sans";
+		color: #4d4d4d;
+		font-size: 13px;
+	}
+	
+	.dimg{
+		width: 100%;
+		margin: 20px auto 30px auto;
+		box-shadow: 0px 1px 8px #777777;
+	}
+
+	h1{
+		font-family: "Playfair Display";
+	}
+
+	h2{
+		font-family: "Playfair Display";
+		font-size: 60px;
+	}
+
+	.headerblock{
+		margin: 60px 0 0 0;
+	}
+
+	.mobileBlock{
+		text-align: justify;
+		-ms-text-justify: distribute-all-lines;
+    	text-justify: distribute-all-lines;
+	}
+
+	.mimg{
+		width: 30%;
+		box-shadow: 0px 1px 8px #777777;
+    	vertical-align: top;
+    	display: inline-block;
+    	*display: inline;
+    	zoom: 1
+	}
+
+	.limg{
+		width: 48%;
+		box-shadow: 0px 1px 8px #777777;
+    	vertical-align: top;
+    	display: inline-block;
+    	*display: inline;
+    	zoom: 1
+	}
+
+	.stretch {
+    	width: 100%;
+    	display: inline-block;
+    	font-size: 0;
+    	line-height: 0
+	}
+
+	#profPic{
+		width: 100%;
+		margin: 100px auto 0 auto;
+		box-shadow: 0px 1px 8px #777777;
+	}
+
+	.textBlock2{
+		width: 100%;
+		margin: 130px auto;
+	}
+
+
+
+	#leftBar{
+		//height: 1000px;
+		//box-shadow: 3px 0px 3px #aaa;
+	}
 }
