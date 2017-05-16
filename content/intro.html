@@ -1,0 +1,61 @@
+<div id="introcontainer">
+	<img id="logocollage" src="img/logocollage.png" alt="">
+</div>
+<div id="introoverlay">
+	<div id="overlaycontainer">
+		<div id="left">
+			<div id="topleft" class="logosection">
+				<div class="blinder" id="i1"></div>
+				<div class="blinder" id="i2"></div>
+			</div>
+			<div id="bottomleft" class="logosection">
+				<div class="blinder" id="i4"></div>
+				<div class="blinder" id="i5"></div>
+			</div>
+		</div>
+		<div id="right" class="logosection">
+			<div class="blinder" id="i3"></div>
+			<div class="blinder" id="i6"></div>
+		</div>
+	</div>
+</div>
+
+<script>
+    setTimeout(function(){
+    	$("#i1").addClass("opacity0");
+   	}, 500);
+   	setTimeout(function(){
+    	$("#i5").addClass("opacity0");
+   	}, 1000);
+   	setTimeout(function(){
+    	$("#i3").addClass("opacity0");
+   	}, 1500);
+   	setTimeout(function(){
+    	$("#i6").addClass("opacity0");
+   	}, 2000);
+   	setTimeout(function(){
+    	$("#i2").addClass("opacity0");
+   	}, 2500);
+   	setTimeout(function(){
+    	$("#i4").addClass("opacity0");
+   	}, 3000);
+	/*$('#i1').delay(500).addClass('opacity0');
+    $('#i2').delay(1500).addClass('opacity0');
+    $('#i3').delay(2500).addClass('opacity0');
+    $('#i4').delay(3500).addClass('opacity0');
+    $('#i5').delay(4500).addClass('opacity0');
+    $('#i6').delay(5500).addClass('opacity0');*/
+</script>
+
+
+<!--<div class="introcontainer">
+	<img src="" alt="" class="introimg" id="i1">
+	<img src="" alt="" class="introimg" id="i2">
+	<img src="" alt="" class="introimg" id="i3">
+	<img src="" alt="" class="introimg" id="i4">
+	<img src="" alt="" class="introimg" id="i5">
+	<img src="" alt="" class="introimg" id="i6">
+</div>
+<div class="overlay">
+	<img src="" alt="" class="intrologo">
+</div>-->

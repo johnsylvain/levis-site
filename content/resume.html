@@ -45,6 +45,14 @@ loadingTask.promise.then(function(pdf) {
   // PDF loading error
   console.error(reason);
 });
+
+   	setTimeout(function(){
+   		$("#the-canvas").removeClass("opacity0")
+   	}, 500);
+
+   	setTimeout(function(){
+   		$(".buttonimg").removeClass("opacity0")
+   	}, 500);
 </script>
 
 <div class="row">
@@ -52,9 +60,9 @@ loadingTask.promise.then(function(pdf) {
 	<div class="col-md-10" style="text-align: center;">
 		<h4 style="margin-top: 40px;">My R&eacute;sum&eacute;</h4>
 		<a href="img/resume.pdf" download>
-			<img id="dl" src="img/download_icon.png" alt="">
+			<img class='buttonimg opacity0' src="img/download_icon.png" alt="">
 		</a>
-		<canvas id="the-canvas"></canvas>
+		<canvas id="the-canvas" class="opacity0"></canvas>
 		<!--<img id="resumeimg" src="img/resume.png" alt="">-->
 	</div>
 	<div class="col-md-1"></div>

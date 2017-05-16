@@ -5,29 +5,113 @@
 	<title>Levi Schrumpf</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="./dist/css/style.css">
+	<link rel="stylesheet" href="./dist/css/chocolat.css">
+
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3" id="leftBar">
-				<nav id="nav">
-					<img id="logo" src="img/portLogo.png" alt="">
-					<ul>
-						<li><a href="home" class="active">Home</a></li>
-						<li><a href="expi">Expimetrics</a></li>
-						<li><a href="lic">LIC</a></li>
-						<li><a href="misc">Misc.</a></li>
-					</ul>
-					
-				</nav>
+	<div id="introcontainer">
+		<img id="logocollage" src="img/logocollage.png" alt="">
+	</div>
+	<div id="introoverlay">
+		<div id="overlaycontainer">
+			<div id="left">
+				<div id="topleft" class="logosection">
+					<div class="blinder" id="i1"></div>
+					<div class="blinder" id="i2"></div>
+				</div>
+				<div id="bottomleft" class="logosection">
+					<div class="blinder" id="i4"></div>
+					<div class="blinder" id="i5"></div>
+				</div>
 			</div>
-			<div id="content"></div>
-				
-			<footer>Levi Schrumpf &copy; 2016</footer>
+			<div id="right" class="logosection">
+				<div class="blinder" id="i3"></div>
+				<div class="blinder" id="i6"></div>
+			</div>
 		</div>
 	</div>
+
+
+<header role="banner">
+<nav id="navbar-primary" class="navbar opacity0" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="portfolio" class="active no">PORTFOLIO</a></li>
+        <li><a href="resume" class="no">R&Eacute;SUM&Eacute;</a></li>
+        <li><a href="aboutme" class="no"><img id="logo-navbar-middle" class='logo' src="img/portLogo.png" width="200" alt="Logo Thing main logo"></a></li>
+        <li><a href="aboutme" class="no">ABOUT ME</a></li>
+        <li><a href="contact" class="no">CONTACT</a></li>
+        <!--<li><a href="expi">Expimetrics</a></li>	-->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header><!-- header role="banner" -->
+
+	<!--<nav id="nav">
+		<ul>
+			<li><a href="home" class="active">HOME</a></li>
+			<li><a href="portfolio">PORTFOLIO</a></li>
+			<li><a href="home"><img id="logo" src="img/portLogo.png" alt=""></a></li>
+			<li><a href="aboutme">ABOUT ME</a></li>
+			<li><a href="contact">CONTACT</a></li>
+			<!<li><a href="expi">Expimetrics</a></li>	
+			<li><a href="charlab">Character Growth App</a></li>
+			<li><a href="lic">LIC</a></li>
+			<li><a href="misc">Misc.</a></li>
+		</ul>
+	</nav>-->
+
+	<div class="container opacity0">
+		<div id="content"></div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./dist/js/jquery.chocolat.js"></script>
 	<script src="./dist/js/main.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src='./dist/js/pdf.js'></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+	<script>
+		setTimeout(function(){
+    		$("#i1").addClass("opacity05");
+   		}, 500);
+   		setTimeout(function(){
+    		$("#i5").addClass("opacity05");
+   		}, 1000);
+   		setTimeout(function(){
+    		$("#i3").addClass("opacity05");
+   		}, 1500);
+   		setTimeout(function(){
+    		$("#i6").addClass("opacity05");
+   		}, 2000);
+   		setTimeout(function(){
+    		$("#i2").addClass("opacity05");
+   		}, 2500);
+   		setTimeout(function(){
+    		$("#i4").addClass("opacity05");
+   		}, 3000);
+   		setTimeout(function(){
+   			$("#introcontainer").addClass("opacity0")
+   		}, 4000);
+   		setTimeout(function(){
+   			$("#introoverlay").addClass("opacity0")
+   		}, 5000);
+   		setTimeout(function(){
+   			$(".container").removeClass("opacity0")
+   		}, 5000);
+   		setTimeout(function(){
+   			$("nav").removeClass("opacity0")
+   		}, 5000);
+	</script>
 </body>
 </html>
