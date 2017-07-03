@@ -1,4 +1,4 @@
-<script>
+<!--<script>
 
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
@@ -48,11 +48,11 @@ loadingTask.promise.then(function(pdf) {
 
    	setTimeout(function(){
    		$("#the-canvas").removeClass("opacity0")
-   	}, 500);
+   	}, 800);
 
    	setTimeout(function(){
    		$(".buttonimg").removeClass("opacity0")
-   	}, 500);
+   	}, 800);
 </script>
 
 <div class="row">
@@ -63,8 +63,21 @@ loadingTask.promise.then(function(pdf) {
 			<img class='buttonimg opacity0' src="img/download_icon.png" alt="">
 		</a>
 		<canvas id="the-canvas" class="opacity0"></canvas>
-		<!--<img id="resumeimg" src="img/resume.png" alt="">-->
 	</div>
 	<div class="col-md-1"></div>
+</div>
+-->
+
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10" style="text-align: center;">
+    <h4 style="margin-top: 40px;">My R&eacute;sum&eacute;</h4>
+    <a href="img/resume.pdf" download>
+      <img class='buttonimg margin20' src="img/download_icon.png" alt="">
+    </a>
+    <img class='resumepng' src="img/resume.png" alt="">
+  </div>
+  <div class="col-md-1"></div>
 </div>
 
